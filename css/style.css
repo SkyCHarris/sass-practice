@@ -1,3 +1,20 @@
+.btn-info, .btn-callout {
+  color: #fff;
+  display: inline-block;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0.75em 1.5em;
+  border-radius: 0.35em;
+}
+.btn-info:hover, .btn-callout:hover {
+  color: #fff;
+  opacity: 0.8;
+}
+.btn-info:active, .btn-callout:active {
+  opacity: initial;
+}
+
 /* BASE ------------------------------------------- */
 * {
   box-sizing: border-box;
@@ -53,7 +70,7 @@ header h1 {
   letter-spacing: 1px;
 }
 header p {
-  color: #fff;
+  color: #eeea72;
   font-size: 1.25em;
   margin: 0;
 }
@@ -64,7 +81,7 @@ header::after {
   height: 50px;
   position: absolute;
   transform: skewY(-2deg);
-  background-color: white;
+  background-color: #fff;
   bottom: -25px;
 }
 
@@ -75,7 +92,7 @@ footer {
   margin-top: 3.5em;
   position: relative;
 }
-footer::after {
+footer::before {
   content: "";
   display: block;
   width: 100%;
@@ -110,6 +127,7 @@ footer::after {
   text-decoration: none;
   text-transform: uppercase;
   padding: 0.5em;
+  transition: 0.3s;
 }
 .main-nav a:hover {
   color: #eeea72;
@@ -135,19 +153,11 @@ footer::after {
   margin: 0.35em 0 0;
   line-height: 1.25;
 }
-.card .icon, .card h1 {
+.card .icon,
+.card h1 {
   color: #278da4;
 }
 
-.btn {
-  color: #fff;
-  display: inline-block;
-  font-weight: bold;
-  text-decoration: none;
-  text-transform: uppercase;
-  padding: 0.75em 1.5em;
-  border-radius: 0.35em;
-}
 .btn-callout {
   font-size: 1.1em;
   background-color: #b13c69;
@@ -163,7 +173,6 @@ footer::after {
   header {
     height: 340px;
   }
-
   header h1 {
     font-size: 3.4em;
   }
